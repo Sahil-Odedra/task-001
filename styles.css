@@ -1,0 +1,149 @@
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --border: #30363d;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --accent: #58a6ff;
+  --hover: #1f6feb;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--hover);
+}
+
+/* Typography & Layout */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #c9d1d9;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(13, 17, 23, 0.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Cards */
+.card-dark {
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-dark:hover {
+  transform: translateY(-4px);
+  border-color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: var(--text-primary);
+  color: var(--bg);
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-custom:hover {
+  opacity: 0.9;
+  color: var(--bg);
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--panel);
+  color: var(--text-primary);
+}
+
+/* Badges */
+.badge-tech {
+  background-color: rgba(88, 166, 255, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  font-weight: 500;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 4rem;
+}

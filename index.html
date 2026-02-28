@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sahil Odedra — Software Engineer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top px-3 py-3">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="#home">Sahil Odedra</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <i class="fas fa-bars" style="color: var(--text-primary)"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container" style="padding-top: 15vh;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 animate-content">
+                <h1 class="hero-title">Software Developer building reliable systems.</h1>
+                <p class="hero-subtitle">Hi, I'm Sahil Odedra. MCA Candidate and tech enthusiast focused on modern web
+                    technologies, cloud platforms, and practical problem-solving.</p>
+
+                <div class="d-flex align-items-center mb-4 gap-3 text-secondary">
+                    <span><i class="fas fa-map-marker-alt me-2"></i>Rajkot, India</span>
+                    <span><i class="fas fa-circle ms-2 me-2" style="font-size: 0.5rem; color: #3fb950"></i>Open to
+                        Opportunities</span>
+                </div>
+
+                <div class="d-flex gap-3 flex-wrap mt-4">
+                    <a href="https://github.com/Sahil-Odedra" target="_blank" class="btn btn-outline-custom"><i
+                            class="fab fa-github me-2"></i>GitHub</a>
+                    <a href="https://www.linkedin.com/in/sahil-odedra/" target="_blank"
+                        class="btn btn-outline-custom"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">About & Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card-dark h-100">
+                    <h4 class="mb-4"><i class="fas fa-graduation-cap me-2" style="color: var(--accent)"></i>Education
+                    </h4>
+                    <div class="mb-4 pb-3 border-bottom" style="border-color: var(--border) !important;">
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <h5 class="mb-0">Nirma University</h5>
+                            <span class="badge"
+                                style="background: var(--border); color: var(--text-primary)">2024–2026</span>
+                        </div>
+                        <p class="text-secondary mb-0">MCA — Advanced Coursework & Research</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <h5 class="mb-0">Christ College</h5>
+                            <span class="badge"
+                                style="background: var(--border); color: var(--text-primary)">2021–2024</span>
+                        </div>
+                        <p class="text-secondary mb-0">BCA — Computer Applications</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-dark h-100">
+                    <h4 class="mb-4"><i class="fas fa-laptop-code me-2" style="color: var(--accent)"></i>Technologies
+                    </h4>
+
+                    <h6 class="text-primary mb-3 mt-4" style="color: var(--text-primary) !important;">Languages</h6>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge-tech">Java</span>
+                        <span class="badge-tech">C++</span>
+                        <span class="badge-tech">Python</span>
+                    </div>
+
+                    <h6 class="text-primary mb-3" style="color: var(--text-primary) !important;">Tools & Frameworks</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge-tech">Flask</span>
+                        <span class="badge-tech">Docker</span>
+                        <span class="badge-tech">AWS</span>
+                        <span class="badge-tech">Google Cloud</span>
+                        <span class="badge-tech">JSP</span>
+                        <span class="badge-tech">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card-dark d-flex flex-column h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Hospital Management</h5>
+                        <a href="https://github.com/Sahil-Odedra/Hospital-management" target="_blank"
+                            class="text-secondary fs-5 hover-accent"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-secondary flex-grow-1">A hospital administration tool providing secure
+                        multi-user role-based authentication and automated email confirmations for appointments.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3 pt-3 border-top"
+                        style="border-color: var(--border) !important;">
+                        <span class="badge-tech" style="font-size: 0.75rem;">Java</span>
+                        <span class="badge-tech" style="font-size: 0.75rem;">JSP</span>
+                        <span class="badge-tech" style="font-size: 0.75rem;">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card-dark d-flex flex-column h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Cameraman Booking</h5>
+                        <a href="https://github.com/Sahil-Odedra/Cameraman-booking" target="_blank"
+                            class="text-secondary fs-5 hover-accent"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-secondary flex-grow-1">Full-stack web application with role management, booking
+                        services, and automated email processing. Fully containerized.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3 pt-3 border-top"
+                        style="border-color: var(--border) !important;">
+                        <span class="badge-tech" style="font-size: 0.75rem;">Python</span>
+                        <span class="badge-tech" style="font-size: 0.75rem;">Flask</span>
+                        <span class="badge-tech" style="font-size: 0.75rem;">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card-dark d-flex flex-column h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Blockchain E-Challan</h5>
+                        <a href="https://github.com/Sahil-Odedra/Challan-System" target="_blank"
+                            class="text-secondary fs-5 hover-accent"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-secondary flex-grow-1">Decentralized traffic citation system built on Ethereum,
+                        paired with a Dockerized Flask backend and hosted on Google Cloud Run.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3 pt-3 border-top"
+                        style="border-color: var(--border) !important;">
+                        <span class="badge-tech" style="font-size: 0.75rem;">Ethereum</span>
+                        <span class="badge-tech" style="font-size: 0.75rem;">Cloud Run</span>
+                        <span class="badge-tech" style="font-size: 0.75rem;">Flask</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="card-dark text-center py-5">
+            <h2 class="mb-4">Let's Connect</h2>
+            <p class="text-secondary max-w-md mx-auto mb-5">I'm currently looking for new opportunities. Whether you
+                have a question or just want to say hi, I'll try my best to get back to you!</p>
+
+            <div class="d-flex justify-content-center gap-4">
+                <a href="mailto:Sahilodedra26@gmail.com" class="btn btn-outline-custom"><i
+                        class="fas fa-envelope me-2"></i>Email</a>
+                <a href="https://www.linkedin.com/in/sahil-odedra/" target="_blank" class="btn btn-outline-custom"><i
+                        class="fab fa-linkedin me-2"></i>LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sahil Odedra. Built for Cloud Computing & DevOps Task 1.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
