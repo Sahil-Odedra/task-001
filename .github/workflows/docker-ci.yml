@@ -10,17 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-    - name: Login to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build Docker Image
-      run: docker build -t sahilodedra/portfolio-website:latest .
+      - name: Build Docker Image
+        run: docker build -t sahilodedra/portfolio-website:latest .
 
-    - name: Push Docker Image
-      run: docker push sahilodedra/portfolio-website:latest
+      - name: Push Docker Image
+        run: docker push sahilodedra/portfolio-website:latest
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker pull sahilodedra/portfolio-website:latest
+            docker stop portfolio-container || true
+            docker rm portfolio-container || true
+            docker run -d -p 8080:80 --name portfolio-container sahilodedra/portfolio-website:latest
